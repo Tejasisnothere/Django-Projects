@@ -12,7 +12,7 @@ SECRET_KEY = os.getenv('DJANGO_SECRET_KEY', 's3cr3t-k3y-8yH&!9x@4A#rTtY')
 DEBUG = os.getenv('DEBUG', 'False') == 'True'
 
 # ✅ Allowed Hosts (Include Railway domain & localhost)
-ALLOWED_HOSTS = os.getenv('ALLOWED_HOSTS', '127.0.0.1,localhost,django-projects-production-0299.up.railway.app').split(',')
+ALLOWED_HOSTS = os.getenv('ALLOWED_HOSTS', '127.0.0.1,localhost,django-projects-production-0299.up.railway.app', 'django-projects-production-2387.up.railway.app').split(',')
 
 # ✅ Installed Apps
 INSTALLED_APPS = [
