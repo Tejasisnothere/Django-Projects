@@ -13,7 +13,7 @@ DEBUG = os.getenv('DEBUG', 'False') == 'True'
 
 # ✅ Allowed Hosts (Include Railway domain & localhost)
 ALLOWED_HOSTS = os.getenv('ALLOWED_HOSTS', '127.0.0.1,localhost,django-projects-production-0299.up.railway.app', 'django-projects-production-2387.up.railway.app').split(',')
-
+CSRF_TRUSTED_ORIGINS = ['https://django-projects-production-2387.up.railway.app']
 # ✅ Installed Apps
 INSTALLED_APPS = [
     "pages.apps.PagesConfig",  # Custom App
