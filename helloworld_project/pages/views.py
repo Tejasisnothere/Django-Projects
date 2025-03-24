@@ -8,7 +8,7 @@ from django.views.generic import TemplateView
 #     return HttpResponse("Hello, World!")
 
 def HomePageView(request):
-    return render(request, 'home.html')
+    return render(request, 'index.html')
 
 def AboutPageView(request):
     return render(request, 'about.html')
